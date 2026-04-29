@@ -1,0 +1,169 @@
+# Blackmagic - a HSLuv-based dark theme
+
+# --- UI ---
+
+"ui.background" = { bg = "black" }
+"ui.text" = { fg = "cloud" }
+"ui.text.focus" = { fg = "cloud", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "emphasis_s70" }
+
+"ui.cursor" = { fg = "black", bg = "cloud" }
+"ui.cursor.primary" = { fg = "black", bg = "func" }
+"ui.cursor.match" = { fg = "black", bg = "logic" }
+
+"ui.selection" = { bg = "sel" }
+"ui.selection.primary" = { bg = "sel_primary" }
+
+"ui.cursorline.primary" = { bg = "surface" }
+
+"ui.linenr" = { fg = "gray" }
+"ui.linenr.selected" = { fg = "func" }
+
+"ui.statusline" = { fg = "cloud", bg = "surface" }
+"ui.statusline.inactive" = { fg = "gray_light", bg = "surface_dim" }
+"ui.statusline.normal" = { fg = "black", bg = "func" }
+"ui.statusline.insert" = { fg = "black", bg = "mint" }
+"ui.statusline.select" = { fg = "black", bg = "logic" }
+
+"ui.popup" = { fg = "cloud", bg = "black" }
+"ui.window" = { fg = "gray" }
+"ui.menu" = { fg = "cloud", bg = "black" }
+"ui.menu.selected" = { fg = "black", bg = "func" }
+"ui.menu.scroll" = { fg = "func" }
+
+"ui.help" = { fg = "cloud", bg = "black" }
+
+"ui.virtual.whitespace" = { fg = "gray_dark" }
+"ui.virtual.ruler" = { bg = "surface" }
+"ui.virtual.indent-guide" = { fg = "gray_dark" }
+"ui.virtual.inlay-hint" = { fg = "gray_light" }
+"ui.virtual.wrap" = { fg = "gray" }
+
+"ui.bufferline" = { fg = "gray_light", bg = "black" }
+"ui.bufferline.active" = { fg = "cloud", bg = "surface" }
+
+# --- Diagnostics ---
+
+"diagnostic.error" = { underline = { style = "curl", color = "emphasis" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "func" } }
+"diagnostic.info" = { underline = { style = "curl", color = "logic" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "gray_light" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+"error" = { fg = "emphasis" }
+"warning" = { fg = "func" }
+"info" = { fg = "logic" }
+"hint" = { fg = "gray_light" }
+
+# --- Diff / VCS ---
+
+"diff.plus" = { fg = "mint" }
+"diff.delta" = { fg = "logic" }
+"diff.minus" = { fg = "emphasis" }
+
+# --- Syntax ---
+
+"comment" = { fg = "emphasis", bg = "emphasis_bg" }
+
+"constant" = { fg = "data_dim" }
+"constant.numeric" = { fg = "logic" }
+"constant.numeric.integer" = { fg = "logic" }
+"constant.numeric.float" = { fg = "logic_light" }
+"constant.character" = { fg = "emphasis_s100" }
+"constant.character.escape" = { fg = "logic" }
+"constant.builtin" = { fg = "data_dim" }
+"constant.builtin.boolean" = { fg = "logic" }
+
+"string" = { fg = "emphasis_s70" }
+"string.regexp" = { fg = "logic" }
+"string.special" = { fg = "logic" }
+"string.special.path" = { fg = "func", modifiers = ["underlined"] }
+"string.special.url" = { fg = "func", modifiers = ["underlined"] }
+
+"type" = { fg = "typ", bg = "type_bg" }
+"type.builtin" = { fg = "typ", bg = "type_bg" }
+"type.enum" = { fg = "typ" }
+"type.enum.variant" = { fg = "type_l10" }
+"constructor" = { fg = "func", bg = "func_bg" }
+
+"attribute" = { fg = "meta" }
+
+"function" = { fg = "func", bg = "func_bg" }
+"function.builtin" = { fg = "func", bg = "func_bg" }
+"function.method" = { fg = "func", bg = "func_bg" }
+"function.macro" = { fg = "meta" }
+
+"variable" = { fg = "data_light" }
+"variable.builtin" = { fg = "data" }
+"variable.parameter" = { fg = "func_l10" }
+"variable.other.member" = { fg = "data_desat" }
+
+"property" = { fg = "data_desat" }
+
+"label" = { fg = "logic" }
+
+"keyword" = { fg = "func_h275" }
+"keyword.control.conditional" = { fg = "logic" }
+"keyword.control.repeat" = { fg = "logic" }
+"keyword.control.return" = { fg = "func" }
+"keyword.control.import" = { fg = "func" }
+"keyword.control.exception" = { fg = "logic" }
+"keyword.operator" = { fg = "logic" }
+"keyword.function" = { fg = "func" }
+"keyword.storage.type" = { fg = "typ" }
+"keyword.storage.modifier" = { fg = "type_s70" }
+"keyword.directive" = { fg = "meta" }
+
+"operator" = { fg = "logic" }
+"special" = { fg = "typ" }
+"tag" = { modifiers = ["underlined"] }
+
+"punctuation" = { fg = "cloud" }
+"punctuation.delimiter" = { fg = "pink" }
+"punctuation.bracket" = { fg = "pink" }
+"punctuation.special" = { fg = "typ" }
+
+"namespace" = { fg = "func" }
+
+"markup.heading" = { fg = "func", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "func", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "logic" }
+"markup.raw" = { fg = "emphasis_s70" }
+"markup.list" = { fg = "logic" }
+
+# Palette MUST be last — Helix treats everything after [palette] as palette entries
+[palette]
+black = "#000000"
+cloud = "#d7e5e3"
+emphasis = "#eb0059"
+emphasis_bg = "#190004"
+emphasis_s70 = "#d24263"
+emphasis_s100 = "#eb0059"
+func = "#f97f18"
+func_bg = "#120400"
+func_l10 = "#fda680"
+func_h275 = "#ae8efc"
+typ = "#c800ee"
+type_bg = "#1a0021"
+type_l10 = "#da52ff"
+type_s70 = "#ad4dc9"
+data = "#b428ff"
+data_dim = "#9500d6"
+data_light = "#d3a6ff"
+data_desat = "#ac3df0"
+logic = "#5c63ff"
+logic_light = "#7f84ff"
+logic_bg = "#000447"
+meta = "#e5895c"
+pink = "#d5387f"
+mint = "#88e8aa"
+sel = "#1a1a2e"
+sel_primary = "#2a1a3e"
+surface = "#0a0a0a"
+surface_dim = "#050505"
+gray = "#333333"
+gray_light = "#555555"
+gray_dark = "#1a1a1a"
